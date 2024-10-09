@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "4d9b7d1e-889d-4f8d-b1c8-01d62ead426c",
+		"name": "graphql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38882621"
+	},
+	"item": [
+		{
+			"name": "http://localhost:12345/graphql",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "// {// 리뷰목록조회\r\n//   \"query\": \"query { findAllReviews { id content author createdAt bookId } }\"\r\n// }\r\n// {// 특정 도서 리뷰 조회\r\n//   \"query\": \"query { findBookReviews(bookId: 1) { id content author createdAt bookId } }\"\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
